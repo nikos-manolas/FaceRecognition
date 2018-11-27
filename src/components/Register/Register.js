@@ -19,7 +19,7 @@ class Register extends Component {
 	}
 
 	onPasswordChange = (event) => {
-		this.setState({registerEmail: event.target.value})
+		this.setState({registerPassword: event.target.value})
 	}
 
 	onSubmitRegister = () => {

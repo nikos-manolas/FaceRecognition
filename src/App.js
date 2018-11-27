@@ -83,7 +83,6 @@ class App extends Component {
     clarifaiApp.models
     .predict(Clarifai.FACE_DETECT_MODEL, this.state.input)
     .then(response => {
-      console.warn(response)
       if (response) {
         fetch('http://localhost:3000/image', {
           method: 'put',
